@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Peña CCRN</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Gran Peña CCRN</h1>
+        </header>
+
+        <section id="venta">
+            <img src="assets/IMG/peña.jpg" class="imgVenta" alt="" style="width: 100%" >
+            <h2>Detalle de Venta</h2>
+            <div id="contenedorProductos"></div>
+            <button id="agregarProducto">Agregar Producto</button>
+
+
+
+            
+            <form id="formularioTicket">
+                <label for="selectMedioPago">Medio de Pago:</label>
+                <select id="selectMedioPago">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="transferencia">Transferencia</option>
+                </select>
+                <button type="submit">Generar Ticket</button>
+            </form>
+            
+
+            <div>
+                <p>Número de Ticket: <span id="numeroTicket">1</span></p>
+                <p>Monto Total: <span id="montoTotal">0.00</span></p>
+                <p>Ventas Efectivo: <span id="ventasEfectivo">0.00</span></p>
+                <p>Ventas Transferencia: <span id="ventasTransferencia">0.00</span></p>
+                <p>Total Ventas: <span id="totalVentas">0.00</span></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
